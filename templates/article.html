@@ -26,9 +26,9 @@
                 </a>
                 <h2 class="article-info">{{ article.author }}</h2>
                 <small class="about-author">{{ article.about_author }}</small>
-                <h5>Published</h5>
+                <h5>Published / 已發佈</h5>
                 <p>{{ article.locale_date }}</p>
-                <a href="/">&larr;Home</a>
+                <a href="/">&larr; Home / 首頁</a>
             </hgroup>
         </header>
     </div>
@@ -38,7 +38,7 @@
                 <header class="post-header">
                     <h1>{{ article.title }}</h1>
                         <p class="post-meta">
-                            // under {% for tag in article.tags %}
+                            tags / 標籤 // {% for tag in article.tags %}
                                 <a class="post-category" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
                             {% endfor %}
                         </p>
