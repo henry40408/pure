@@ -3,6 +3,14 @@ body, p, h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
 }
 
+blockquote {
+  border: 4px solid #aaa;
+  border-width: 0 0 0 4px;
+
+  margin-left: 0;
+  padding-left: 1rem;
+}
+
 kbd {
   -moz-border-radius: 3px;
   -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
