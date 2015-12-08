@@ -11,9 +11,15 @@
                     {% endfor %}
                         <p class="social">
                     {% for title, link in SOCIAL %}
+                        {% if title != 'flipboard' %}
                             <a href="{{ link }}">
                                 <i class="fa fa-{{ title }} fa-3x"></i>
                             </a>
+                        {% else %}
+                            <a href="{{ link }}?utm_campaign=widgets&utm_source=logo&utm_medium=web">
+                                <img class="flipboard-icon" src="http://cdn.flipboard.com/badges/flipboard_mwsw.png" alt="Flipboard" />
+                            </a>
+                        {% endif %}
                     {% endfor %}
                         <p>
                     </hgroup>
