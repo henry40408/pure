@@ -38,6 +38,16 @@ ol li, ul li,
   text-align: justify;
 }
 
+.sidebar {
+  /* empty */
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    height: 80vh;
+  }
+}
+
 .brand-main a {
   font-size: 2.5rem;
 }
@@ -114,6 +124,12 @@ ol li, ul li,
   .social {
     margin: 0;
   }
+}
+
+.go-top {
+  border-radius: 8px;
+  text-transform: uppercase;
+  padding: .5rem .4rem .4rem;
 }
 
 .pure-g-r .flipboard-icon {
