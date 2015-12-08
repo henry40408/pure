@@ -44,7 +44,7 @@ ol li, ul li,
 
 @media (max-width: 768px) {
   .sidebar {
-    height: 80vh;
+    height: 90vh;
   }
 }
 
@@ -118,12 +118,6 @@ ol li, ul li,
 
 .social {
   /* empty */
-}
-
-@media (max-width: 375px) {
-  .social {
-    margin: 0;
-  }
 }
 
 .go-top {
