@@ -29,11 +29,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,700">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/tipuesearch/tipuesearch.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pure.css">
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/overrides.css">
     {% block head_css %}{% endblock %}
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="{{ SITEURL }}/theme/tipuesearch/tipuesearch_set.js"></script>
+    <script src="{{ SITEURL }}/theme/tipuesearch/tipuesearch.min.js"></script>
     {% block head_js %}{% endblock %}
 </head>
 
@@ -62,6 +65,15 @@
         // don't scroll you back up the page.
         $('body').on('click', 'a[href="#"]', function(event) {
             event.preventDefault();
+        });
+
+        // Tipue search
+        // reference: http://www.tipue.com/search/docs
+        $(document).ready(function() {
+            $('#tipue_search_input').tipuesearch({
+                mode: 'json',
+                contentLocation: 'tipuesearch_content.json'
+            });
         });
     </script>
     {% include 'analytics.html' %}

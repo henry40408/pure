@@ -48,3 +48,9 @@ See it live at [testpy.org](http://testpy.org/)
 ## Aditional features
 * [FitVids](https://github.com/davatron5000/FitVids.js) jQuery plugin for fluid width video embeds.
 * [Math Render Ability](https://github.com/getpelican/pelican-plugins/tree/master/render_math) *render_math* plugin for using MathJax to render both MathML and LaTex.
+* [Tipue Search](https://github.com/getpelican/pelican-plugins/tree/master/tipue_search) A Pelican plugin to serialize generated HTML to JSON that can be used by jQuery plugin - Tipue Search.
+
+In order to support Tipue Search to your website, please add the following code at the end of your `pelicanconf.py` file:
+
+    TIPUE_SEARCH = True
+    DIRECT_TEMPLATES = ('index', 'tags', 'categories', 'archives', 'search', )
