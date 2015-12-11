@@ -11,6 +11,18 @@ blockquote {
   padding-left: 1rem;
 }
 
+.content img {
+  border: 1px solid #aaa;
+}
+
+img + blockquote {
+  color: #222;
+  margin: 0;
+  font-size: .9rem;
+  padding: 0 .5rem;
+  line-height: 1;
+}
+
 kbd {
   -moz-border-radius: 3px;
   -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
