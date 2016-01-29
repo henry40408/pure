@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="pure-g-r" id="layout">
+    {% include 'sidebar.html' %}
+    <div class="pure-u-1">
+        <div class="content">
+            <div class="posts">
+                <h1 class="content-subhead">Categories</h1>
+                <section class="post">
+                    <ul>
+                    {% for category, articles in categories %}
+                        <li><a href="{{ SITEURL }}/category/{{ category }}.html">{{ category }}</a></li>
+                    {% endfor %}
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
