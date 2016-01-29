@@ -10,7 +10,7 @@
                 <section class="post">
                     <ul>
                     {% for category, articles in categories %}
-                        <li><a href="{{ SITEURL }}/category/{{ category }}.html">{{ category }}</a></li>
+                        <li><a href="{{ SITEURL }}/category/{{ category }}.html">{{ category }}</a> ({{ articles | length }})</li>
                     {% endfor %}
                     </ul>
                 </section>
