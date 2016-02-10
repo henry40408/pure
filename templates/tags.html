@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="pure-g-r" id="layout">
+    {% include 'sidebar.html' %}
+    <div class="pure-u-1">
+        <div class="content">
+            <div class="posts">
+                <h1 class="content-subhead">Tags</h1>
+                <section class="post">
+                    <ul>
+                    {% for tag, articles in tags %}
+                        <li><a href="{{ SITEURL }}/tag/{{ tag }}.html">{{ tag }}</a> ({{ articles | length }})</li>
+                    {% endfor %}
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
