@@ -53,6 +53,15 @@ ol li, ul li,
 }
 
 @media (max-width: 768px) {
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  ol {
+    padding-left: 15px;
+  }
+
+  ol li,
   .content p {
     font-size: 15px;
   }
